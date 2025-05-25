@@ -1,0 +1,185 @@
+:root {
+    --accent-color: #6B4226; /* Основной цвет */
+    --background-color: #fdf8f4; /* Фон страницы */
+    --text-color: #2e2e2e; /* Основной текст */
+    --light-brown: #c9a384; /* Светлый коричневый */
+    --hover-brown: #5a3820; /* Тёмный коричневый */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Цвет тени */
+    --hover-shadow-color: rgba(0, 0, 0, 0.2); /* Тень при наведении */
+    --button-hover-bg: #3e2c1c; /* Цвет кнопки при наведении */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--hover-brown);
+}
+
+h1, h2, h3, h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Кнопки */
+.button, .btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover, .btn:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+/* Карусель */
+.carousel {
+    width: 100%;
+    height: 570px; /* Увеличена высота баннера */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px; /* Увеличена высота изображения */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ближайшие спектакли */
+.upcoming h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px; /* Увеличен отступ */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.upcoming{
+
+}
+
+.card {
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 30px; /* Увеличен отступ между карточками */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--hover-shadow-color);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: var(--text-color);
+}
+
+.news h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px; /* Увеличен отступ */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.list-group-item {
+    padding: 20px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    margin-bottom: 20px; /* Увеличен отступ между новостями */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--hover-shadow-color);
+}
+
+.review-quote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 700px;
+    color: #4a3b2a;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Партнеры */
+.partner-logos img {
+    height: 60px;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.partner-logos img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+/* Стиль для фона страницы */
+.site-index {
+///background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(245, 245, 245, 0.8)), url('/images/background.jpg') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+}

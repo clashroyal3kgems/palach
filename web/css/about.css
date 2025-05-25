@@ -1,0 +1,87 @@
+:root {
+    --accent-color: #6B4226;
+    --background-color: #fdf8f4;
+    --text-color: #2e2e2e;
+    --light-brown: #c9a384;
+    --hover-brown: #5a3820;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--hover-brown);
+}
+
+h1, h2, h3, h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.list-group-item {
+    border: none;
+    background-color: #f8f5f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.review-quote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 700px;
+    color: #4a3b2a;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.review-quote footer {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--hover-brown);
+}
+
+.map-section h2 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-section p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.partners img {
+    height: 60px;
+    margin: 15px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.partners img:hover {
+    filter: none;
+}
